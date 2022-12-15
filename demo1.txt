@@ -1,4 +1,0 @@
-This is demo1. txt file that is committed in master branch
-branch1
-yes it is 
-
