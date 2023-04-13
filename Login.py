@@ -15,21 +15,7 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 class mouseHover:
     def mouse(self):
-        driver.get('https://genesis.qa.lrescorp.com/')
-        driver.maximize_window()
-        driver.implicitly_wait(5)
-        driver.find_element(By.ID, 'UserName').send_keys('KatalonTestUser')
-        driver.find_element(By.ID, 'Password').send_keys('Welcome1!')
-        driver.find_element(By.XPATH, '//button[normalize-space()="Login"]').click()
-        driver.implicitly_wait(5)
-        orders = driver.find_element(By.XPATH, '//span[normalize-space()="Orders"]')
-        createNewOrder = driver.find_element(By.XPATH, "//span[normalize-space()='Create New Order']")
-        driver.implicitly_wait(5)
-
-        #Mouse Over Orders
-        actions = ActionChains(driver)
-        driver.implicitly_wait(5)
-        actions.move_to_element(orders).move_to_element(createNewOrder).click(createNewOrder).perform()
+        driver.get('https://demo.actitime.com/login.do')
 
 mH = mouseHover()
 mH.mouse()
