@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                                      Login.py
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
